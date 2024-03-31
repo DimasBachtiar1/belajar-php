@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg ,#098dc1,60% ,#f417de);
+    padding: 40px 60px;
+}
+.container{
+    min-height: fit-content;
+    border-radius: 5px;
+    padding: 0px 25px 25px;
+    margin: 0px auto;
+    width: 90%;
+    background-color: #ffffff;
+    overflow: scroll;
+
+}
+.container h1{
+    text-align: center;
+    padding: 25px;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    /* border: 1px solid #000; */
+
+}
+thead tr td{
+    font-weight: bold;
+    border-bottom: 1px solid #000;
+}
+tbody tr td{
+    border-bottom: 1px solid #000;
+}
+td{
+    padding: 5px;
+}
+
+.btn{
+    margin: 10px 2px;
+    width: 16%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+button{
+    padding: 10px 12px;
+    border-radius: 5px;
+    background-color: #b936d0;
+    color: #efefef;
+    font-weight: bold;
+    border: none;
+}
+
+button:hover, button:focus {
+    background-color: #a22db7;
+    color: #EEEEEE;
+    font-weight: bold;
+
+}   
+
+
+#data-card{
+    display: none;
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.card{
+    background: linear-gradient(45deg ,#c12b09,60% ,#f4de17);
+    padding: 20px;
+    border: 1px solid #aaa;
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px rgb(0,0,0,0.3);
+    color: #efefef;
+}
+.card p{
+    padding-top: 10px;
+}
+.harga{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+.harga p{
+    padding: 0;
+}
+.card h2{
+    font-weight: bold;
+}
+
+@media (max-width:1224px) {
+    .btn{
+        margin: 10px 2px;
+        width: 25%;
+    }
+}
+@media (max-width:768px) {
+    .btn{
+        margin: 10px 2px;
+        width: 40%;
+    }
+}
+@media (max-width:600px) {
+    .btn{
+        margin: 10px 2px;
+        width: 60%;
+    }
+}
+@media (max-width:575px) {
+    .btn{
+        margin: 10px 2px;
+        width: 100%;
+    }
+    button{
+        padding: 6px 9px;
+        border-radius: 5px;
+        background-color: #b936d0;
+        color: #efefef;
+        font-weight: bold;
+        border: none;
+    }
+    main{
+        padding: 40px 25px;
+    }
+}
+@media (max-width:375px) {
+    .btn{
+        margin: 10px 2px;
+        width: 100%;
+    }
+}
